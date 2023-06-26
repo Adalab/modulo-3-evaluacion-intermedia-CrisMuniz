@@ -30,9 +30,9 @@ const renderCharacterList = () => {
   eachItem.quote.toLowerCase().includes(quoteSeach.toLocaleLowerCase()) &&
   eachItem.character.includes(char))
   return filteredList.map((eachCharacter) => (
-    <li>
+    <li className='list'>
     <p>{eachCharacter.quote}</p>
-    <label htmlFor="">{eachCharacter.character}</label>
+    <label htmlFor="" className='name'>{eachCharacter.character}</label>
   </li>
   ))
 };
@@ -40,7 +40,7 @@ const renderCharacterList = () => {
 
   return (
     <div>
-   <h1>Frases De Frerinds</h1>
+   <h1 className='title'>Frases De Friends</h1>
    <header>
     <form action="">
       <label htmlFor="">Filtrar por Frase</label>
@@ -58,7 +58,7 @@ const renderCharacterList = () => {
     </form>
    </header>
    <main>
-    <ul>
+    <ul className='ListCharacter'>
      {renderCharacterList()}
     </ul>
    </main>

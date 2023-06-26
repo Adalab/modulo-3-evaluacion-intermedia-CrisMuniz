@@ -1,1 +1,10 @@
-
+.title {
+    color: green;
+}
+.listCharacter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.name {
+    color: green;
+}
